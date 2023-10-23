@@ -1,0 +1,7 @@
+date,store_id,product_id,quantity,price,customer_id
+2024-01-01,s1,p1,1,10.0,c1
+2024-01-01,s1,p2,2,12.0,c2
+2024-01-02,s1,p1,1,10.0,c1
+2024-01-02,s2,p3,3,8.0,c3
+
+

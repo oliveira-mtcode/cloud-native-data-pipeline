@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.pipeline
+    environment:
+      - PROJECT_ROOT=/app
+      - DATA_RAW_DIR=/app/data/raw
+      - DATA_PROCESSED_DIR=/app/data/processed
+      - FORECAST_HORIZON_DAYS=14
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+  ruby_report:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.ruby_report
+    environment:
+      - GCP_PROJECT_ID
+      - GCS_BUCKET_PROCESSED
+    ports:
+      - "4567:4567"
+    depends_on:
+      - pipeline
+
+
