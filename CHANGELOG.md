@@ -1,3 +1,4 @@
 - 2023-10-23: test: add unit tests for parser
 - 2023-11-06: feat: add cache layer with eviction policy
 - 2023-11-10: fix: prevent crash on empty input
+- 2023-11-28: fix: handle Windows path separators correctly
