@@ -3,3 +3,4 @@
 - 2023-11-10: fix: prevent crash on empty input
 - 2023-11-28: fix: handle Windows path separators correctly
 - 2023-12-04: chore: bump dependencies
+- 2023-12-12: feat: add basic CLI entry point
