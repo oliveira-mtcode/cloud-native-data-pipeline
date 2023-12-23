@@ -4,3 +4,4 @@
 - 2023-11-28: fix: handle Windows path separators correctly
 - 2023-12-04: chore: bump dependencies
 - 2023-12-12: feat: add basic CLI entry point
+- 2023-12-23: style: apply formatting and lint fixes
