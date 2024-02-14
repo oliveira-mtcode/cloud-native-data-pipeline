@@ -10,3 +10,4 @@
 - 2024-01-19: chore: initialize project structure
 - 2024-01-23: fix: resolve edge case in date parsing
 - 2024-01-31: docs: add README with setup instructions
+- 2024-02-14: feat: add support for JSON output
