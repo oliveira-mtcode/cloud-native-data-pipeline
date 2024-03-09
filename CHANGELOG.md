@@ -12,3 +12,4 @@
 - 2024-01-31: docs: add README with setup instructions
 - 2024-02-14: feat: add support for JSON output
 - 2024-02-27: feat: support configuration via environment variables
+- 2024-03-09: refactor: simplify error handling
