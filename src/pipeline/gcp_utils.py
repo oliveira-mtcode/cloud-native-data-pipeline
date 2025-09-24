@@ -15,6 +15,8 @@ logger = get_logger(__name__)
 def get_gcs_client() -> storage.Client:
     return storage.Client(project=gcp.project_id) if gcp.project_id else storage.Client()
 
+def get_gcs_client_with_auth() -> storage.Client:
+    return storage.Client(project=gcp.project_id) if gcp.project_id else storage.Client()
 
 def gcs_download(bucket_name: str, blob_path: str, local_path: str) -> None:
     client = get_gcs_client()
