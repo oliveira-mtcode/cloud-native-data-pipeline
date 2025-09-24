@@ -1,4 +1,4 @@
-Cloud-Native Retail Analytics Pipeline (Polars + GCP)
+# Cloud-Native Retail Analytics Pipeline (Polars + GCP)
 
 ### Why this exists
 Retail teams need fast, reliable answers: How are sales trending? Which stores will sell more next week? This repo provides an end-to-end, cloud-native pipeline that ingests raw CSV/Parquet data, cleans and transforms it with Polars, engineers forecasting-ready features, trains a lightweight baseline model, and publishes forecasts and human-friendly summaries. Everything is containerized and testable.
