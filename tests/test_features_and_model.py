@@ -14,8 +14,6 @@ def test_daily_and_model_forecast():
         "quantity": [1.0 + (i % 3) for i in range(len(dates))],
         "price": [10.0] * len(dates),
     })
-    df = df.with_columns((pl.col("quantity") * pl.col("price")).alias("revenue"))
-
     daily = daily_store_sales(df)
     art = train_baseline(daily)
     fc = forecast(art, daily, 3)
